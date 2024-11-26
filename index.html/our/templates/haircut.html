@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair 📞 Cut</title>
+      <!-- This is for the styleing -->
+    <link rel="stylesheet" href="../static/css/haircut.css">
+     <!-- This is for the animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <diV class="logos"  id="logos">
+        <diV  class="logostyle"  data-aos="fade-right">
+                <diV  >
+                <a> <img class="logo1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNisNJqOkE5CEYElRLH-rbWpKfVcpI9PGpEw&usqp=CAU" alt=""></a>
+                <a href="{{ url_for('booking') }}"><button class="brief2"><h1>Book now</h1></button></a>
+                </diV>
+        </diV>
+        <diV class="logostyle"  data-aos="fade-right"  >
+                <diV>
+                    <img class="logo2"  src="https://i.pinimg.com/736x/e2/fe/03/e2fe0369b6aa4f6fd6ed3f4f8cd43812--classic-mens-hairstyles-medium-hairstyles-for-men.jpg" alt="hello5">
+                    <a href="{{ url_for('booking2') }}"><button class="brief2"><h1>Book now</h1></button></a>
+                </diV>
+        </diV>
+        <diV class="logostyle"  data-aos="fade-left"  >
+                <diV>
+                    <img class="logo4"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYuWHf9Af1NuEjh1UTMfDwx9lrTTiY5Fml4OnZwCXC8Lx1_uXUYmdFZIdLdvJ8iDZEjUs&usqp=CAU" alt="">
+                    <a href="{{ url_for('booking') }}"><button class="brief2"><h1>Book now</h1></button></a>
+                </div> 
+        </diV>       
+        <diV class="logostyle"  data-aos="fade-left"  >
+                <div>
+                    <img class="logo2"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIAfFv3Dh2VV7QEWdTZa2FLtAROM_tQg-43A&usqp=CAU" alt="">
+                    <a href="{{ url_for('booking2') }}"><button class="brief2"><h1>Book now</h1></button></a>
+                </diV>
+        </diV>
+    </div> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <diV class="logos">
+        <diV  class="logostyle"  data-aos="fade-down">
+            <diV>
+            <img class="logo1" src="https://i.pinimg.com/736x/92/df/dc/92dfdc8fc0fb3f2d0704af66fdd47145.jpg" alt="">
+            <a href="{{ url_for('booking') }}"><button class="brief2"><h1>Book now</h1></button></a>
+            </diV>
+        </diV>
+        <diV class="logostyle" data-aos="fade-down" >
+                <diV>
+                    <img class="logo2"  src="https://content.latest-hairstyles.com/wp-content/uploads/fresh-skin-faded-buzz-cut-for-men.jpg" alt="hello5">
+                    <a href="{{ url_for('booking2') }}"><button class="brief2"><h1>Book now</h1></button></a>
+                </diV>
+        </diV>
+        <diV class="logostyle"  data-aos="fade-down" >
+                <diV>
+                    <img class="logo4"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE32m79PkJ_crR9d7TukzzaHNuuehE4bN4bg&usqp=CAU" alt="">
+                    <a href="{{ url_for('booking') }}"><button class="brief2"><h1>Book now</h1></button></a>
+                </div> 
+        </diV>       
+        <diV class="logostyle"  data-aos="fade-down" >
+                <div>
+                    <img class="logo2"  src="https://i.pinimg.com/564x/44/79/eb/4479eb7886849b000b1c0f4952310388.jpg" alt="">
+                    <a href="{{ url_for('booking2') }}"><button class="brief2"><h1>Book now</h1></button></a>
+                </diV>
+        </diV>
+    </diV>
+    <br>
+    <br>
+    <div class="explore">  <a href=".{{ url_for('home') }}"> <button class="explorebtn" > Explore more !</button></a></div>
+
+    <div class="feedback">
+        <div class="feed_left">
+            <h2 class="feed_h">We are ready for your <br>
+                Feedback </h2>
+        <a href="{{ url_for('feedback') }}">  <button class="feed_p"> Let us discuss to gether! </button></a>
+        </div>
+        <div class="feed_right">
+            <img class="feed_right2" src="../static/images/laughing.jpg" alt="">
+        </div>
+    </div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script> 
+   </body> 
+</html> 

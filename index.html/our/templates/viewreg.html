@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>signup data</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+    body{
+      background-color: rgb(77, 49, 84);
+      display:flex;
+      flex-direction: column;
+      width:80vw;
+      height: auto;
+    }
+    .table{
+      background-color:papayawhip;
+      row-gap:10px;
+      border: 8px solid black;
+      padding:20px;
+      gap: 5rem;
+     border: 8px solid black;
+    }
+    .copy{
+    width: auto;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding:2px;
+    font-weight: 300;
+    letter-spacing:2px;
+    margin:inherit;
+  }
+    .headings{
+      border: 2px solid black; 
+      background-color: black;
+      color:whitesmoke;
+    }
+    .inf{
+      color:black;
+      border: 2px solid transparent;
+      font-weight: 600;
+      /* background-image: linear-gradient(-45deg, rgb(202, 185, 185) 0%, rgb(194, 118, 125) 100%); */
+      background: #BBD2C5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+      font-size:18px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    img {
+      max-width: 100px;
+      height: auto;
+    }
+
+    @media screen and (min-width:0px) and (max-width: 767px){
+      body{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+      }
+      .h1{
+        font-size:20px;
+      }
+      /* .table,.headings,.inf{
+        display: flex;
+        flex-direction: column;
+      } */
+
+    }
+
+  </style>
+</head>
+<body>
+  <h1 style="color: white; font-size:65px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Signup data .
+</h1>
+<br>
+<table class="table" >
+    <thead >
+        <tr >
+          <th class="headings" >NAME</th>
+          <th  class="headings" >EMAIL</th>
+          <th class="headings" >PASSWORD </th>   
+        </tr>
+    </thead>
+    <tbody>
+      {% for row in rows %}
+      <tr  style="text-align: center;">
+        <td  class="inf" >{{row['username']}}</td>
+        <td class="inf"  >{{row['email']}}</td>
+        <td class="inf" >{{row['password']}}</td>
+      </tr> 
+      {% endfor %}       
+    </tbody>
+</table>
+
+</body>
+<div class="copy">
+  <p>Copyright &copy; 2024 Design By <span class="deve"><b>
+    Manjunath.A</b></span></p>
+</div> 
+</html>

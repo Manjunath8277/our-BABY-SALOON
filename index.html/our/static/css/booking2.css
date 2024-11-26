@@ -1,0 +1,104 @@
+body{
+    margin: 0px;
+    height:auto;
+    background-image: url(../images/bcakground2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    /* backdrop-filter: blur(px); */
+}
+
+.box{
+    display: grid;
+    
+}
+.login{
+    margin:auto;
+    margin-top:25px;
+    border: 2px solid black;
+    border-radius:30px;
+    width: 400px;
+    height:auto;
+    backdrop-filter: blur(30px);
+    transition:  0.6s  ease;
+}
+
+.login:hover{
+    border: 2px solid rgb(94, 89, 89);
+    color:white;
+    border-radius: 50px;
+    backdrop-filter: blur(40px);
+    box-shadow: 10px 3px 80px 10px;
+}
+form{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap:5px;
+    
+}
+h1{
+    font-weight: normal;
+    font-size: 38px;
+    text-shadow: 0px 0px 2px rgb(0,0,0,0.5);
+    margin-bottom: 60px;
+    color: white;
+}
+label{
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    color:white;
+}
+input{
+    height: 30px;
+    line-height: 30px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+    background-color:transparent;
+    color:white;
+    font-weight: 200;
+}
+input:hover{
+    background-color: rgb(204, 208, 211);
+    color: black;
+}
+button{
+    width: 10vw;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    margin: 10px 0px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 85px;
+    background-color:rgb(189, 188, 188);
+    border: 2px solid;
+    transition: all 0.5s linear;
+}
+button:hover{
+    background-color:rgb(41, 39, 39);
+    color: white;
+}
+.datatata{
+   color:white;
+   letter-spacing:1px;
+}
+@media screen and (min-width:0px) and (max-width: 767px){
+    body{
+    margin: 0px;
+    background-size:3300px;
+    }
+    .login{
+       margin-top:300px;
+       width:300px;
+       height:auto;
+    }
+    button{
+        width:auto;
+        transform: translate(-30%, -50%); 
+    }
+}

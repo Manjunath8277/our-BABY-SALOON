@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOCATION</title>
+    <style>
+        body{
+        margin:0px;
+        background-image: url(../static/images/background.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        backdrop-filter: blur(300px);
+        }
+        .sent_form{
+            display: flex;
+            flex-direction: row;
+            gap: 5rem;
+           
+        }
+        .reserv{
+            /* font-style: italic; */
+            font-size:45px;
+            text-transform: uppercase;
+        }
+
+        .attributes{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap:1rem;
+            color: white;
+        }
+        .map{
+            margin-top:-20px;
+        }
+        .logo{
+            padding-left: 20px;
+            margin-top:2px;
+        }
+        label{
+            font-size:15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-transform: uppercase;
+        }
+        input{
+            width:20vw;
+            height:4vh;
+            border: 2px solid black;
+            border-radius:30px;
+            padding-left:10px;
+            background-color:white;
+        }
+        .visite{
+           border: 2px solid black;
+           height:10vh;
+           color:black;
+           margin-top:6px;
+           font-size:40PX;
+           text-transform: uppercase;
+           background-color:white;
+           letter-spacing:30px;
+        }
+        .submit{
+            width:8vw; 
+            margin-left:80px 
+        }
+
+        @media screen and (min-width:0px) and (max-width: 767px){
+
+        .body{
+          margin: 0;
+        }            
+        .sent_form{
+        display: flex;
+        flex-direction: column;
+        }
+        .map{
+            width:auto;
+            height:440px;
+        }
+        .reserv{
+            margin-left:-40px;
+        }
+        .visite{
+            height:10vh;
+            width:auto;
+           font-size:25PX;
+           margin-top:15PX;
+           align-items: center;
+           letter-spacing:10px;
+        }
+        .map{
+            margin-top:0px;
+            width:100vw;
+        }
+        .attributes{
+            align-items:stretch;
+            gap:1rem;
+            color: white;
+            padding:60px;
+        }
+        input{
+            width:60vw;
+            height:4vh;
+            text-align: center;
+        }
+        .submit{
+            width:20vw; 
+            height:6vh;
+           justify-content:space-between;
+        }
+        }
+    </style>
+</head>
+<body>
+<div class="sent_form">
+    <div class="name">
+        <h1 class="visite"><img  class="logo" src="https://img.icons8.com/?size=50&id=96RE9rrwGcm6&format=gif" alt="addres">  of salon</h1>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d971.3948778955148!2d78.12871888054013!3d13.12580326753348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1717515318614!5m2!1sen!2sin" width="850" height="540" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <form class="attributes" 
+         action="https://formspree.io/f/xdoqlbwg"
+         method="POST">
+        <h3 class="reserv"><b>reserve now</b></h3>
+        <label for="">username</label>
+        <input type="text" placeholder=" name" name="Client name" required>
+        <label for="">Email</label>
+        <input type="email" placeholder=" email" name="E-mail" required>
+        <label for="">Timings</label>
+        <input type="datetime-local"  name="Timings" required>
+        <label for="">Phone no:</label>
+        <input type="number" placeholder=" Ph number" name="contact number" required>
+        <br>
+        <input class="submit" type="submit">
+    </form>
+</div>
+</body>
+</html>
